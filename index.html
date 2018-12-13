@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Play Jewel Collector!</title>
 </head>
+
 <body>
-    
-    
+
+    <div class=jumbotron>
+        <h1>Jewel Collector</h1>
+        <h5>Click the jewels below and see if you can match the number listed</h5>
+        <h6>Each jewel has a hidden value, and when you select a jewel it totals until you match the random number listed.  If you match the number = you win!</h6>
+        <p>Refresh the page to play again.</p>
+        <p></p>
+    </div>
+
+    <table width="50%"> 
+        <col width = "60">
+        <col width = "70">
+        <col width = "40">
+        <tr>
+            <td>Number to Match: <span id="numberMatch"></span></td>
+            <td>Your Total Score: <span id="totalScore"></span></td>
+            <td><span id="gameMessage"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Wins: <span id="numberWins"></span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Losses: <span id="numberLosses"></span></td>
+        </tr>
+    </table>
+
+    <div class="jewels">
+        <img src="assets/images/quartzCrystal.png" class=jewelImage id="jewel1" width=150pt alt="Quartz">&nbsp;
+        <img src="assets/images/AgateSlicePurple-min.jpg" class=jewelImage id="jewel2" width=150pt alt="Purple">&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="assets/images/blueAgateCrystal.png" class=jewelImage id="jewel3" width=150pt alt="Blue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="assets/images/pinkCrystal.png" class=jewelImage id="jewel4" width=150pt alt="Pink">
+<br>
+<br>
+        <!-- <div class="container"><button class="btn btn-secondary" onclick="newGame()">Play Again!</button></div>
+
+        <script>function newGame() {
+                location.reload();
+            }</script> -->
+           
+    </div>
+
+    <!-- Javascript -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+<script src="assets/javascript/game.js"></script>
 </html>

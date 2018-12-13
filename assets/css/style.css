@@ -1,0 +1,43 @@
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Cabin', sans-serif; */
+
+* {
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding: 0 50 0 0;
+}
+
+.jumbotron {
+    padding: 25px;
+}
+
+.jewels {
+    image-rendering: inherit;
+    height: 50pt;
+}
+
+table {
+    font-size: 18px;
+    margin: 40px;
+}
+
+#gameMessage {
+    color: red;
+}
+
+.container {
+    border: 5px;
+    border-color: #cccccc;
+    max-width: 960px;
+    margin: 25px;
+    padding: 0;
+}
+
+.guess {
+    font-size: 30px;
+    margin: 40px;
+}
+
