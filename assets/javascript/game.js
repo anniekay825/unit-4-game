@@ -20,9 +20,9 @@ function winner() {
   $("#gameMessage").html("You did it!");
   function clearScore() {
     playerTotal.clear();
+    clearScore();
   }
-  clearScore();
-}; 
+};
 
 //if user losses
 function loser() {
@@ -31,8 +31,8 @@ function loser() {
   $("#gameMessage").html("Uh. Nope");
   function clearScore() {
     playerTotal.clear();
+    clearScore();
   }
-  clearScore();
 };
 
 //clicking function for jewels
