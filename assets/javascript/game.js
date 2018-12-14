@@ -17,22 +17,25 @@ var losses = 0;
 function winner() {
   wins++;
   $("#numberWins").html(wins);
-  $("#gameMessage").html("You did it!");
-  function clearScore() {
-    playerTotal.clear();
-    clearScore();
-  }
-};
+  clearScore();
+  };
 
 //if user losses
 function loser() {
   losses++;
   $("#numberLosses").html(losses);
-  $("#gameMessage").html("Uh. Nope");
-  function clearScore() {
-    playerTotal.clear();
-    clearScore();
-  }
+  clearScore();
+  };
+
+function clearScore() {
+  var randomNumber = Math.floor(Math.random() * 102 + 19);
+  $("#numberMatch").html(randomNumber);
+  (playerTotal) = 0;
+  // $("#totalScore").html(playerTotal);
+  (jewel1) = Math.floor(Math.random() * 12) + 1;
+  (jewel2) = Math.floor(Math.random() * 12) + 1;
+  (jewel3) = Math.floor(Math.random() * 12) + 1;
+  (jewel4) = Math.floor(Math.random() * 12) + 1;
 };
 
 //clicking function for jewels
